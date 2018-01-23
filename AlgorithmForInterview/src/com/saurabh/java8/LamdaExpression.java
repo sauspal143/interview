@@ -18,7 +18,7 @@ public class LamdaExpression { // Based on invokedynamic - functions can attach 
 	// 1. name - This becomes anonymous in Java 8
 		// 2. paramters
 		// 3. body
-	// return type - This gets inferred in Java 8
+	// 4. return type - This gets inferred in Java 8
 	
 	public static void main(String args[]) {
 		System.out.println("In main");
