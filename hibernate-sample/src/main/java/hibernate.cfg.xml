@@ -17,7 +17,17 @@
       	<!-- <property name = "hbm2ddl.auto">update</property> Update schema on startup -->
       
       	<!-- List of XML mapping files -->
-      	<mapping class="org.saurabh.demo.hibernate.dto.UserDetails"/> <!-- Names the annotated entity class -->
+      	<!-- <mapping class="org.saurabh.demo.hibernate.dto.UserDetails"/> Names the annotated entity class -->
+      	<!-- <mapping class="org.saurabh.demo.hibernate.dto.UserDetailsWithCollection"/> -->
+      	<!-- <mapping class="org.saurabh.demo.hibernate.dto.UserDetailsOneToOne"/>  --> 
+      	<!-- <mapping class="org.saurabh.demo.hibernate.dto.UserDetailsOneToMany"/> 
+      	<mapping class="org.saurabh.demo.hibernate.dto.Vehicle"/>
+      	<mapping class="org.saurabh.demo.hibernate.dto.UserDetailsManyToOne"/> 
+      	<mapping class="org.saurabh.demo.hibernate.dto.VehicleManyToOne"/>
+      	<mapping class="org.saurabh.demo.hibernate.dto.UserDetailsManyToMany"/> 
+      	<mapping class="org.saurabh.demo.hibernate.dto.VehicleManyToMany"/> -->
+      	<mapping class="org.saurabh.demo.hibernate.dto.UserDetailsCascade"/> 
+      	<mapping class="org.saurabh.demo.hibernate.dto.VehicleCascade"/>
       	<!--  <mapping resource = "Employee.hbm.xml"/> -->
 	</session-factory>
 </hibernate-configuration>
