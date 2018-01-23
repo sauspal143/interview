@@ -20,7 +20,7 @@ public class UserDetails {
 	
 	@Id
 	@Column (name="USER_ID") // @Column provides handle to create specific Column names in the table
-	private int userId;
+	private int userId; // Natural key as it has business significance. If it is not business significant than surrogate key
 	@Column (name="USER_NAME")
     private String userName;
 	//@Basic (fetch=FetchType.LAZY) // By default it uses @Basic if not specified but we can use to specify fetch type and optional attribute

@@ -24,7 +24,12 @@ public class HibernateTest {
 		session.beginTransaction();
 		session.save(user);
 		session.getTransaction().commit();
-		System.out.println("DONE");
+		System.out.println("DONE CREATION");
+		
+		session = sessionFactory.openSession();
+		session.beginTransaction();
+		UserDetails userFetched = (UserDetails) session.get(UserDetails.class, 1);
+		System.out.println("Fetched User Id -> " + userFetched.getUserId() + " - User Name -> " + userFetched.getUserName());
 	}
 
 }
